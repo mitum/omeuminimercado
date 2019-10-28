@@ -1,0 +1,66 @@
+<header class="masthead">
+  <div class="logo"><img src="https://d2lfuvsrdhhm5x.cloudfront.net/wp-content/themes/Divi-child/img/logo-lm.png"/></div>
+  <nav class="nav__main">
+    <ul><a href="#" data-nav="intro">
+        <li>O MEU MINIMERCADO</li></a><a href="#" data-nav="about">
+        <li>Sobre</li></a><a href="#" data-nav="brands">
+        <li>Brands</li></a><a href="#" data-nav="contact">
+        <li>Contact</li></a></ul>
+  </nav>
+</header>
+<section class="intro" id="intro">
+  <h1>O MEU MINIMERCADO</h1>
+  <p> Small retail business that stocks a range of everyday items such as coffee, groceries, snack foods, confectionery, soft drinks, tobacco products, over-the-counter drugs, toiletries, newspapers, and magazines.</p>
+</section>
+<section class="about" id="about">
+  <header class="section-header">
+    <h2>About</h2>
+  </header>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos optio a quam, aperiam ea nisi aspernatur deleniti cumque nam maxime, saepe ut eligendi excepturi impedit earum dolorum, dolorem numquam ullam asperiores quia id fuga eveniet vero. Eius, cumque. Dicta cumque laborum natus facilis labore incidunt qui in inventore saepe cupiditate.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos optio a quam, aperiam ea nisi aspernatur deleniti cumque nam maxime, saepe ut eligendi excepturi impedit earum dolorum, dolorem numquam ullam asperiores quia id fuga eveniet vero. Eius, cumque. Dicta cumque laborum natus facilis labore incidunt qui in inventore saepe cupiditate.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos optio a quam, aperiam ea nisi aspernatur deleniti cumque nam maxime, saepe ut eligendi excepturi impedit earum dolorum, dolorem numquam ullam asperiores quia id fuga eveniet vero. Eius, cumque. Dicta cumque laborum natus facilis labore incidunt qui in inventore saepe cupiditate.</p>
+</section>
+<section class="brands" id="brands">
+  <header class="section-header">
+    <h2>Brands</h2>
+  </header>
+  <article class="brands__icons">
+    <div class="brands__item">
+      <p><i class="fa fa-balance-scale" aria-hidden="true"></i></p>
+      <p class="brnads__item--header">
+        <h3>Lorem ipsum dolor sit</h3>
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis architecto amet ab totam, neque dignissimos expedita ad, officia quae tenetur.</p>
+    </div>
+    <div class="brands__item">
+      <p><i class="fa fa-calendar" aria-hidden="true"></i></p>
+      <p class="brnads__item--header">
+        <h3>Lorem ipsum dolor sit</h3>
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis architecto amet ab totam, neque dignissimos expedita ad, officia quae tenetur.</p>
+    </div>
+    <div class="brands__item">
+      <p><i class="fa fa-bullseye" aria-hidden="true"></i></p>
+      <p class="brnads__item--header">
+        <h3>Lorem ipsum dolor sit</h3>
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis architecto amet ab totam, neque dignissimos expedita ad, officia quae tenetur.</p>
+    </div>
+    <div class="brands__item">
+      <p><i class="fa fa-commenting" aria-hidden="true"></i></p>
+      <p class="brnads__item--header">
+        <h3>Lorem ipsum dolor sit</h3>
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis architecto amet ab totam, neque dignissimos expedita ad, officia quae tenetur.</p>
+    </div>
+  </article>
+</section>
+<section class="contact" id="contact">
+  <header class="section-header">
+    <h2>Contact</h2>
+  </header>
+  <p>920 292 416</p>
+  <p>help@thisaddress.com</p>
+  <p>R. Dr. Manuel Simões Gomes Coelho</p>
+  <p>Odivelas</p>
+</section>
