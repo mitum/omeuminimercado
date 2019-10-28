@@ -1,66 +1,298 @@
+<html lang="en"><head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<title>CodePen - SpartanNash Groceries // LWD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+  body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  background-image: url(http://peninsula.co.za/wp-content/uploads/2016/05/groceries_12801.jpg);
+  background-size: cover;
+  background-position: center 80px;
+  background-repeat: no-repeat;
+  height: 100vh;
+  z-index: 1;
+}
+
+.overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://peninsula.co.za/wp-content/uploads/2016/05/groceries_12801.jpg);
+  background-size: cover;
+  background-position: center 80px;
+  background-repeat: no-repeat;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+
+section,
+.lead {
+  padding: 7rem 1rem 1rem;
+  height: 80vh;
+  overflow: auto;
+}
+
+section,
+ul {
+  color: white;
+}
+
+section {
+  position: relative;
+  z-index: 50;
+}
+
+.masthead {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  text-align: center;
+  background: white;
+  cursor: pointer;
+}
+.logo img {
+  width: 100px;
+  padding: 0.5rem;
+}
+
+nav {
+  position: relative;
+  z-index: 60;
+}
+
+.nav__main {
+  background-color: #1B5E20;
+  color: white;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.nav__main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.nav__main ul a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+}
+
+.section-header {
+  font-size: 2rem;
+}
+
+.lead {
+  position: absolute;
+  right: 0;
+  max-width: 200px;
+  text-align: right;
+}
+.lead h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1B5E20;
+}
+
+@media (min-width: 600px) {
+  .lead {
+    max-width: 400px;
+  }
+  .lead h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 900px) {
+  .lead {
+    max-width: 450px;
+  }
+}
+@media (min-width: 1368px) {
+  .lead {
+    max-width: 600px;
+  }
+  .lead h1 {
+    font-size: 2.5rem;
+  }
+}
+.brands {
+  text-align: center;
+  height: 80vh;
+  overflow: auto;
+}
+
+@media (min-width: 600px) {
+  .brands {
+    margin: auto;
+  }
+}
+@media (min-width: 900px) {
+  .brands {
+    text-align: right;
+  }
+}
+@media (min-width: 1368px) {
+  .brands {
+    max-width: 600px;
+  }
+}
+.brands__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 900px) {
+  .brands__icons {
+    justify-content: flex-end;
+  }
+}
+.brands__item {
+  margin: 1rem;
+  flex: 0 1 250px;
+}
+.brands__item i {
+  font-size: 2rem;
+}
+
+@media (min-width: 900px) {
+  .brands__item {
+    margin: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  .about,
+  .intro,
+  .brands {
+    position: absolute;
+    right: 0;
+    max-width: 600px;
+    text-align: right;
+  }
+}
+.contact {
+  text-align: right;
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
 <header class="masthead">
-  <div class="logo"><img src="https://d2lfuvsrdhhm5x.cloudfront.net/wp-content/themes/Divi-child/img/logo-lm.png"/></div>
-  <nav class="nav__main">
-    <ul><a href="#" data-nav="intro">
-        <li>O MEU MINIMERCADO</li></a><a href="#" data-nav="about">
-        <li>Sobre</li></a><a href="#" data-nav="brands">
-        <li>Brands</li></a><a href="#" data-nav="contact">
-        <li>Contact</li></a></ul>
-  </nav>
+<div class="logo"><img src="https://d2lfuvsrdhhm5x.cloudfront.net/wp-content/themes/Divi-child/img/logo-lm.png"></div>
+<nav class="nav__main">
+<ul><a href="#" data-nav="intro">
+<li>O MEU MINIMERCADO</li></a><a href="#" data-nav="about">
+<li>Sobre</li></a><a href="#" data-nav="brands">
+<li>Brands</li></a><a href="#" data-nav="contact">
+<li>Contact</li></a></ul>
+</nav>
 </header>
-<section class="intro" id="intro">
-  <h1>O MEU MINIMERCADO</h1>
-  <p> Small retail business that stocks a range of everyday items such as coffee, groceries, snack foods, confectionery, soft drinks, tobacco products, over-the-counter drugs, toiletries, newspapers, and magazines.</p>
+<section class="intro" id="intro" style="display: none;">
+<h1>O MEU MINIMERCADO</h1>
+<p> Small retail business that stocks a range of everyday items such as coffee, groceries, snack foods, confectionery, soft drinks, tobacco products, over-the-counter drugs, toiletries, newspapers, and magazines.</p>
 </section>
-<section class="about" id="about">
-  <header class="section-header">
-    <h2>About</h2>
-  </header>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos optio a quam, aperiam ea nisi aspernatur deleniti cumque nam maxime, saepe ut eligendi excepturi impedit earum dolorum, dolorem numquam ullam asperiores quia id fuga eveniet vero. Eius, cumque. Dicta cumque laborum natus facilis labore incidunt qui in inventore saepe cupiditate.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos optio a quam, aperiam ea nisi aspernatur deleniti cumque nam maxime, saepe ut eligendi excepturi impedit earum dolorum, dolorem numquam ullam asperiores quia id fuga eveniet vero. Eius, cumque. Dicta cumque laborum natus facilis labore incidunt qui in inventore saepe cupiditate.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos optio a quam, aperiam ea nisi aspernatur deleniti cumque nam maxime, saepe ut eligendi excepturi impedit earum dolorum, dolorem numquam ullam asperiores quia id fuga eveniet vero. Eius, cumque. Dicta cumque laborum natus facilis labore incidunt qui in inventore saepe cupiditate.</p>
+<section class="about" id="about" style="display: none;">
+<header class="section-header">
+<h2>About</h2>
+</header>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos optio a quam, aperiam ea nisi aspernatur deleniti cumque nam maxime, saepe ut eligendi excepturi impedit earum dolorum, dolorem numquam ullam asperiores quia id fuga eveniet vero. Eius, cumque. Dicta cumque laborum natus facilis labore incidunt qui in inventore saepe cupiditate.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos optio a quam, aperiam ea nisi aspernatur deleniti cumque nam maxime, saepe ut eligendi excepturi impedit earum dolorum, dolorem numquam ullam asperiores quia id fuga eveniet vero. Eius, cumque. Dicta cumque laborum natus facilis labore incidunt qui in inventore saepe cupiditate.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos optio a quam, aperiam ea nisi aspernatur deleniti cumque nam maxime, saepe ut eligendi excepturi impedit earum dolorum, dolorem numquam ullam asperiores quia id fuga eveniet vero. Eius, cumque. Dicta cumque laborum natus facilis labore incidunt qui in inventore saepe cupiditate.</p>
 </section>
-<section class="brands" id="brands">
-  <header class="section-header">
-    <h2>Brands</h2>
-  </header>
-  <article class="brands__icons">
-    <div class="brands__item">
-      <p><i class="fa fa-balance-scale" aria-hidden="true"></i></p>
-      <p class="brnads__item--header">
-        <h3>Lorem ipsum dolor sit</h3>
-      </p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis architecto amet ab totam, neque dignissimos expedita ad, officia quae tenetur.</p>
-    </div>
-    <div class="brands__item">
-      <p><i class="fa fa-calendar" aria-hidden="true"></i></p>
-      <p class="brnads__item--header">
-        <h3>Lorem ipsum dolor sit</h3>
-      </p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis architecto amet ab totam, neque dignissimos expedita ad, officia quae tenetur.</p>
-    </div>
-    <div class="brands__item">
-      <p><i class="fa fa-bullseye" aria-hidden="true"></i></p>
-      <p class="brnads__item--header">
-        <h3>Lorem ipsum dolor sit</h3>
-      </p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis architecto amet ab totam, neque dignissimos expedita ad, officia quae tenetur.</p>
-    </div>
-    <div class="brands__item">
-      <p><i class="fa fa-commenting" aria-hidden="true"></i></p>
-      <p class="brnads__item--header">
-        <h3>Lorem ipsum dolor sit</h3>
-      </p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis architecto amet ab totam, neque dignissimos expedita ad, officia quae tenetur.</p>
-    </div>
-  </article>
+<section class="brands" id="brands" style="display: none;">
+<header class="section-header">
+<h2>Brands</h2>
+</header>
+<article class="brands__icons">
+<div class="brands__item">
+<p><i class="fa fa-balance-scale" aria-hidden="true"></i></p>
+<p class="brnads__item--header">
+</p><h3>Lorem ipsum dolor sit</h3>
+<p></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis architecto amet ab totam, neque dignissimos expedita ad, officia quae tenetur.</p>
+</div>
+<div class="brands__item">
+<p><i class="fa fa-calendar" aria-hidden="true"></i></p>
+<p class="brnads__item--header">
+</p><h3>Lorem ipsum dolor sit</h3>
+<p></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis architecto amet ab totam, neque dignissimos expedita ad, officia quae tenetur.</p>
+</div>
+<div class="brands__item">
+<p><i class="fa fa-bullseye" aria-hidden="true"></i></p>
+<p class="brnads__item--header">
+</p><h3>Lorem ipsum dolor sit</h3>
+<p></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis architecto amet ab totam, neque dignissimos expedita ad, officia quae tenetur.</p>
+</div>
+<div class="brands__item">
+<p><i class="fa fa-commenting" aria-hidden="true"></i></p>
+<p class="brnads__item--header">
+</p><h3>Lorem ipsum dolor sit</h3>
+<p></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis architecto amet ab totam, neque dignissimos expedita ad, officia quae tenetur.</p>
+</div>
+</article>
 </section>
-<section class="contact" id="contact">
-  <header class="section-header">
-    <h2>Contact</h2>
-  </header>
-  <p>920 292 416</p>
-  <p>help@thisaddress.com</p>
-  <p>R. Dr. Manuel Simões Gomes Coelho</p>
-  <p>Odivelas</p>
+<section class="contact" id="contact" style="display: none;">
+<header class="section-header">
+<h2>Contact</h2>
+</header>
+<p>920 292 416</p>
+<p>help@thisaddress.com</p>
+<p>R. Dr. Manuel Simões Gomes Coelho</p>
+<p>Odivelas</p>
 </section>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script id="rendered-js">
+      // hide these elements on page load
+$('section, .overlay').hide();
+
+// show sections on click
+$('.nav__main a').on('click', function () {
+  // get link attribute
+  var navID = $(this).attr('data-nav');
+  // $('.lead').hide(); // hides the splash text. uncomment if you're using the .lead text
+  $('section').hide(); // hide all sections
+  $('body').addClass('overlay'); // add dark overlay to splash image
+  $('#' + navID).slideDown(); // slide down the appropriate section
+});
+
+// reset page back to 'home' on logo click
+$('.logo').on('click', function () {
+  $('body').removeClass('overlay'); // remove the dark overlay
+  $('section').hide(); // hide all sections
+  $('.lead').show(); // shows the splash text. uncomment this if you're using the .lead text
+});
+      //# sourceURL=pen.js
+    </script>
+
+
+</body></html>
